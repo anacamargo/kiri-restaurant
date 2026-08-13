@@ -27,4 +27,73 @@ export const content = {
       ],
     },
   },
+  menu: {
+    title: "Today's menu",
+    subtitle: "All prices in BRL · Serves one",
+    sections: [
+      {
+        name: "Starters",
+        plates: [
+          {
+            image: "edame",
+            name: "Edame",
+            price: 18,
+            description: "Lightly salted, steamed young soybeans",
+          },
+          {
+            image: "gyoza",
+            name: "Gyoza (6 pcs)",
+            price: 42,
+            description: "Pan-fried pork and cabbage dumplings, ponzu dip",
+          },
+          {
+            image: "miso",
+            name: "Miso soup",
+            price: 22,
+            description: "Tofu, wakame, spring onion",
+          },
+        ],
+      },
+      {
+        name: "Main",
+        plates: [
+          {
+            image: "salmon",
+            name: "Salmon donburi",
+            price: 78,
+            description: "Sashimi-grade salmon over warm rice, sesame, nori",
+          },
+          {
+            image: "tonkatsu",
+            name: "Tonkatsu teishoku",
+            price: 68,
+            description: "Breaded pork cutlet, rice, miso soup, pickles",
+          },
+          {
+            image: "ramen",
+            name: "Vegetable ramen",
+            price: 58,
+            description: "Kombu broth, seasonal vegetables, soft-boiled egg",
+          },
+        ],
+      },
+      {
+        name: "Dessert",
+        plates: [
+          {
+            image: "matcha",
+            name: "Matcha panna cotta",
+            price: 32,
+            description: "Served with azuki bean paste",
+          },
+          {
+            image: "mochi",
+            name: "Mochi ice cream (2 pcs)",
+            price: 28,
+            description: "Seasonal flavors — ask your server",
+          },
+        ],
+      },
+    ],
+  },
 };
