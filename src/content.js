@@ -35,8 +35,8 @@ export const content = {
         name: "Starters",
         plates: [
           {
-            image: "edame",
-            name: "Edame",
+            image: "edamame",
+            name: "Edamame",
             price: 18,
             description: "Lightly salted, steamed young soybeans",
           },
@@ -95,5 +95,25 @@ export const content = {
         ],
       },
     ],
+  },
+  contact: {
+    title: "Find us",
+    subtitle: "Reservations recommended on weekends",
+    location: {
+      title: "Location",
+      address: ["Rua da Neblina, 609", "Jardins, São Paulo – SP"],
+      phone: "+55 (11) 3456-7890",
+      email: "ola@kiri.com.br",
+    },
+    hours: {
+      title: "Hours",
+      schedule: [
+        { day: "Mon – Tue", time: "Closed" },
+        { day: "Wed – Fri", time: "12h – 15h · 19h – 22h" },
+        { day: "Saturday", time: "12h – 23h" },
+        { day: "Sunday", time: "12h – 17h" },
+      ],
+    },
+    map: "Map · Jardins, SP",
   },
 };
