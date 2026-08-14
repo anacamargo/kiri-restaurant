@@ -174,25 +174,25 @@ body {
   color: var(--text-secondary);
 }
 
-.icon {
-  stroke: var(--accent);
-}
-
-.menu-header {
+.menu-header,
+.contact-header {
   margin-bottom: 28px;
 }
 
-.menu-header h2 {
+.menu-header h2,
+.contact-header h2 {
   font-family: var(--font-voice);
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
 }
 
-.menu-header p {
+.menu-header p,
+.contact-header p {
   font-size: 13px;
   color: var(--text-secondary);
 }
+
 .menu-section {
   margin-bottom: 32px;
 }
@@ -266,4 +266,113 @@ body {
   color: var(--text-secondary);
   line-height: 1.5;
   margin: 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-card {
+  background-color: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-style: normal;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.contact-info a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: var(--accent);
+}
+
+.contact-hours {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 13px;
+  margin: 0;
+}
+
+.contact-hours dt,
+.contact-hours dd {
+  padding: 6px 0;
+  border-bottom: 0.5px solid var(--border-light);
+}
+
+.contact-hours dt:last-of-type,
+.contact-hours dd:last-of-type {
+  border-bottom: none;
+}
+
+.contact-hours dt {
+  color: var(--text-secondary);
+}
+
+.contact-hours dd {
+  color: var(--text-primary);
+  font-weight: 500;
+  margin: 0;
+  text-align: end;
+}
+
+.contact-map {
+  background-color: var(--border);
+  border-radius: 12px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid var(--border);
+}
+
+.contact-map span {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
 }
