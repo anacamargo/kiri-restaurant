@@ -73,6 +73,10 @@ body {
   cursor: pointer;
 }
 
+.nav-tab.active {
+  font-weight: 700;
+}
+
 .main-content {
   padding: 0 32px;
   min-height: calc(100vh - 72px);
