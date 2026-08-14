@@ -1,4 +1,5 @@
 import { content } from "./content.js";
+import { icons } from "./icons.js";
 
 const pageContent = content.home;
 
@@ -34,14 +35,16 @@ const createFeatures = () => {
   cards.forEach((card) => {
     const cardEl = document.createElement("div");
     cardEl.classList.add("feature-card");
-    cardEl.innerHTML = card.icon;
+    const cardIcon = document.createElement("img");
+    cardIcon.src = icons[card.icon];
+    cardIcon.alt = "";
     const titleEl = document.createElement("h3");
     titleEl.classList.add("feature-card-title");
     titleEl.textContent = card.title;
     const descriptionEl = document.createElement("p");
     descriptionEl.classList.add("feature-card-description");
     descriptionEl.textContent = card.description;
-    cardEl.append(titleEl, descriptionEl);
+    cardEl.append(cardIcon, titleEl, descriptionEl);
     featuresEl.append(cardEl);
   });
   return featuresEl;
