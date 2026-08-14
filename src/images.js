@@ -1,3 +1,4 @@
+import edamameImage from "./assets/images/edamame.jpg";
 import gyozaImage from "./assets/images/gyoza.jpg";
 import matchaImage from "./assets/images/matcha.jpg";
 import misoImage from "./assets/images/miso.jpg";
