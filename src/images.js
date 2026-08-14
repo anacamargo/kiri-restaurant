@@ -1,4 +1,3 @@
-import edameImage from "./assets/images/edame.jpg";
 import gyozaImage from "./assets/images/gyoza.jpg";
 import matchaImage from "./assets/images/matcha.jpg";
 import misoImage from "./assets/images/miso.jpg";
@@ -8,7 +7,7 @@ import salmonImage from "./assets/images/salmon.jpg";
 import tonkatsuImage from "./assets/images/tonkatsu.jpg";
 
 export const images = {
-  edame: edameImage,
+  edamame: edamameImage,
   gyoza: gyozaImage,
   miso: misoImage,
   salmon: salmonImage,
