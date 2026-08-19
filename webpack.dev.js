@@ -5,7 +5,7 @@ export default {
   mode: "development",
   entry: "./src/index.js",
   output: {
-    filename: "main.js",
+    filename: "main.[contenthash].js",
     path: path.resolve(import.meta.dirname, "dist"),
     clean: true,
   },

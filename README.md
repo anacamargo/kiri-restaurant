@@ -55,7 +55,8 @@ kiri-restaurant/
 │   └── template.html
 ├── .gitignore
 ├── package.json
-└── webpack.config.js
+├── webpack.dev.js
+└── webpack.prod.js
 ```
 
 ## Getting Started
@@ -71,13 +72,13 @@ npm install
 Run the development server:
 
 ```bash
-npx webpack serve
+npm run dev
 ```
 
 Build for production:
 
 ```bash
-npx webpack
+npm run build
 ```
 
 ## Deployment
@@ -86,7 +87,7 @@ This project is deployed to GitHub Pages via the `gh-pages` branch using Webpack
 
 ```bash
 git checkout gh-pages && git merge main --no-edit
-npx webpack
+npm run build
 git add dist -f && git commit -m "Deployment commit"
 git subtree push --prefix dist origin gh-pages
 git checkout main
